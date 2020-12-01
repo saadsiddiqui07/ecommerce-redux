@@ -6,7 +6,7 @@ import Checkout from "./components/checkout/Checkout.jsx";
 import Login from "./components/login/Login.jsx";
 import Payment from "./components/payment/Payment.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { connect, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { SET_USER, LOGOUT } from "./redux/action";
 import { auth } from "./Firebase/firebase";
 
@@ -14,8 +14,8 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(authUser => {
-      console.log("AUTH USER", authUser);
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      //console.log("AUTH USER", authUser);
       if (authUser) {
         dispatch({
           type: SET_USER,
@@ -23,12 +23,12 @@ function App() {
             uid: authUser.uid,
             photo: authUser.photoURL,
             displayName: authUser.displayName,
-            email: authUser.email
-          }
+            email: authUser.email,
+          },
         });
       } else {
         dispatch({
-          type: LOGOUT
+          type: LOGOUT,
         });
       }
     });
@@ -65,10 +65,4 @@ function App() {
   );
 }
 
-const mapToStateProps = store => {
-  return {
-    user: store.user
-  };
-};
-
-export default connect(mapToStateProps)(App);
+export default App;

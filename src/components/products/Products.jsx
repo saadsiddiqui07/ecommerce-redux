@@ -43,9 +43,9 @@ const mapDispatchProps = (dispatch, ownProps) => {
           price: price,
           amount: amount,
           image: image,
-          discount: discount
-        }
-      })
+          discount: discount,
+        },
+      }),
   };
 };
 

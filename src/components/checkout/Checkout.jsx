@@ -34,7 +34,7 @@ const Checkout = ({ cart }) => {
           </div>
         </>
       ) : (
-        <>
+        <div>
           <div className="checkout__left">
             <div className="checkout__leftContainer">
               <div className="checkout__leftInfo">
@@ -73,7 +73,7 @@ const Checkout = ({ cart }) => {
           <div className="checkout__right">
             <Subtotal />
           </div>
-        </>
+        </div>
       )}
     </div>
   );
