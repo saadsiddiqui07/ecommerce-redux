@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2776ef;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header__logo {
+  cursor: pointer;
+  margin-right: 20px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 60px;
+  background-color: white;
+}
+
+.header__search > input {
+  border: none;
+  outline-width: 0;
+  height: 15px;
+  padding: 3px;
+  width: 600px;
+  flex: 1;
+  font-size: 15px;
+}
+
+.header__search > input::placeholder {
+  font-size: 15px;
+  color: gray;
+}
+
+.header__searchIcon {
+  font-size: 30px !important;
+  color: #2776ef;
+}
+
+.header__login {
+  background-color: white;
+  cursor: pointer;
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__loginButton {
+  background-color: white !important;
+  color: #2776ef !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  width: 150px;
+}
+
+.header__more {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.header__more > h4 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__cart {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header__cartIcon {
+  font-size: 25px !important;
+}
+
+.header__cart > p {
+  font-weight: 700;
+  margin-left: 3px;
+  font-size: 18px;
+}
+.header__cartCount {
+  padding: 4px;
+  background-color: #ff6161;
+  border-radius: 30px;
+  margin-top: -26px;
+  margin-left: -15px;
+}
