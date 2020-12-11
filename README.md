@@ -2,6 +2,32 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### Project Structure
+
+------------APP------------
+
+1.) HOME PAGE  ("/")
+  --> a.) Header component
+  --> b.) Home component
+        --> i) Product component (Shirts)
+        --> ii) Product component (Tshirts)
+
+2.) LOGIN PAGE ("/login")
+  --> a.) Header component
+  --> b.) Login component
+
+3.) CHECKOUT PAGE ("/checkout")
+  --> a.) Header component
+  --> b.) Checkout component
+    --> i.) CheckoutProducts component 
+    --> ii.) Subtotal component 
+
+4.) PAYMENT PAGE ("/payment")
+  --> a.) Header component
+  --> b.) Payment component
+
+    
+
 In the project directory, you can run:
 
 ### `yarn start`
